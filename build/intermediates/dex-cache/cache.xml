@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Android Studio App\PatientAppointment\PatAppointment\jtds-1.2.7\jtds-1.2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47f9b00937707c328eccbcdd38867a799ea91b44">
+        <dex dex="E:\Android Studio App\PatientAppointment\PatAppointment\app\build\intermediates\pre-dexed\debug\jtds-1.2.7_edd2a167a31b8b1c78f8655f1e90f27c6c482908.jar" />
+    </item>
+
+</items>
