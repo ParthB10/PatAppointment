@@ -45,17 +45,18 @@
         android:id="@+id/tvpuid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvotp"
         android:fontFamily="monospace"
         android:text="Enter Your OTP Below"
         android:textAlignment="center"
         android:textColor="@color/textColorPrimary"
         android:textSize="30sp"
         android:typeface="monospace"
+        android:visibility="gone"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:layout_below="@+id/tvotp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/tvLotp"
@@ -107,7 +108,8 @@
         android:layout_below="@+id/tvpuid"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        android:text="DOTP" />
+        android:text="DOTP"
+        android:visibility="gone" />
 
     <ProgressBar
         android:id="@+id/pbar"
