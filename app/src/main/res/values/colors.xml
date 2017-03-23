@@ -9,4 +9,7 @@
 
     <color name="bg_view_sms">#ffd423</color>
     <color name="bg_view_otp">#fc6d38</color>
+    <color name="TextColor">#555555</color>
+    <color name="ButttonText">#ffffff</color>
+    <color name="ButtonColor">#666666</color>
 </resources>

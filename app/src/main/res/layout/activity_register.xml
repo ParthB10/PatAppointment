@@ -8,42 +8,74 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/gradient_background"
     tools:context="local.medstream.patappointment.Register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER TO MEDPAL"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal"
+        android:textSize="28dp"
+        android:id="@+id/tdv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/TextColor"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/etdname"
+        android:focusable="true"
         android:hint="Enter Your Full Name"
-        android:layout_marginTop="80dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="85dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:fontFamily="serif" />
+        android:fontFamily="serif"
+        android:textColor="@color/TextColor"
+        android:textColorHint="@color/TextColor"
+        android:backgroundTint="@color/TextColor"
+        android:maxLines="1"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/etdcno"
         android:hint="Enter Your Mobile Number"
         android:layout_below="@id/etdname"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:inputType="phone"
-        android:fontFamily="serif" />
+        android:ems="12"
+        android:fontFamily="serif"
+        android:textColor="@color/TextColor"
+        android:textColorHint="@color/TextColor"
+        android:backgroundTint="@color/TextColor"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/etdemail"
         android:hint="Enter Your Email ID"
         android:layout_below="@id/etdcno"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:fontFamily="serif" />
+        android:textColor="@color/TextColor"
+        android:textColorHint="@color/TextColor"
+        android:backgroundTint="@color/TextColor"
+        android:fontFamily="serif"
+        android:inputType="textEmailAddress"/>
+
     <Button
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:id="@+id/bnext"
         android:text="Next"
         android:layout_below="@id/etdemail"
@@ -51,25 +83,14 @@
         android:fontFamily="monospace"
         android:textSize="24sp"
         android:textAlignment="center"
-        android:background="?android:attr/colorActivatedHighlight"
-        android:textColor="@android:color/white" />
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="REGISTER TO MEDPAL"
-    android:gravity="center_horizontal"
-    android:textSize="30dp"
-    android:id="@+id/tdv"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="15dp"
-    android:fontFamily="monospace" />
+        android:background="@color/ButtonColor"
+        android:textColor="@color/ButttonText" />
+
     <ProgressBar
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:id="@+id/progressBar"
         android:visibility="gone" />
